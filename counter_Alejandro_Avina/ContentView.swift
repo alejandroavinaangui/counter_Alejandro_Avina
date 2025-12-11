@@ -29,35 +29,35 @@ struct ContentView: View {
             Color.gray
             VStack {
                 Text("The counter is : \(counter)")
+                    .font(.system(size:40,weight:.light))
+                Spacer().frame(height: 80)
                 HStack{
                     Button(action: increment ){
                         Text("Increment")
                             .font(.headline)
-                            .overlay{
-                                RoundedRectangle(cornerRadius:5)
-                                    .stroke(Color.blue,lineWidth:2)
-                                    .padding(.horizontal,-2)
-                            }
+                            .padding(10)
+                            .background(Color.blue)
+                            .cornerRadius(100)
+                            .foregroundColor(.black)
+                          
                     }
                     Button(action:decrement){
                         Text("Decrement")
                             .font(.headline)
-                            .overlay{
-                                RoundedRectangle(cornerRadius:5)
-                                    .stroke(Color.blue,lineWidth:2)
-                                    .padding(.horizontal,-2)
-                            }
+                            .padding(10)
+                            .background(Color.blue)
+                            .cornerRadius(100)
+                            .foregroundColor(.black)
                     }
                     .padding()
                 }
                 Button(action:reset){
                     Text("Reset")
                         .font(.headline)
-                        .overlay{
-                            RoundedRectangle(cornerRadius:5)
-                                .stroke(Color.blue,lineWidth:2)
-                                .padding(.horizontal,-2)
-                        }
+                        .padding(10)
+                        .background(Color.blue)
+                        .cornerRadius(100)
+                        .foregroundColor(.black)
                 }
                 
             }
