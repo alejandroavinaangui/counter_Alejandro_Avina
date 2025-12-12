@@ -13,7 +13,9 @@ struct ContentView: View {
     @State var pressed = false;
     
     func increment(){
+        
         counter += 1;
+        
     }
     
     func decrement(){
